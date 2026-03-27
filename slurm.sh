@@ -6,8 +6,9 @@
 # Load Python 3.9 module (required by SWIFT)
 module load Python/3.9.6-GCCcore-11.2.0
 
+
 # Activate SWIFT virtual environment
-source /mimer/NOBACKUP/groups/naiss2025-22-1056/python3_9_6_envs/swift-research/bin/activate
+source $SWIFT_VENV/bin/activate
 
 which python
 
