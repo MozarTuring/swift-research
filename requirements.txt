@@ -15,4 +15,4 @@
 # hydra-core
 # shortuuid
 # human-eval
-bayes_opt
+bayesian-optimization
