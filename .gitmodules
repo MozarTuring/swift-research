@@ -1,0 +1,3 @@
+[submodule "SWIFT"]
+	path = SWIFT
+	url = https://github.com/swiftlang/swift.git
