@@ -1,12 +1,7 @@
 #!/usr/bin/bash
-#SBATCH -A naiss2025-22-1056 -p alvis
-#SBATCH --nodes=1
-#SBATCH --ntasks-per-node=1
-#SBATCH --gres=gpu:T4:4
-#SBATCH --time=7-00:00:00
-#SBATCH --output=swift_exp_%j.out
-#SBATCH --error=swift_exp_%j.err
-#SBATCH --job-name=swift-exp
+#SBATCH -A naiss2026-4-5 -p alvis
+#SBATCH --output=slurm_out.log
+#SBATCH --error=slurm_out.log
 
 # Load Python 3.9 module (required by SWIFT)
 module load Python/3.9.6-GCCcore-11.2.0
