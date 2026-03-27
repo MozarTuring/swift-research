@@ -2,7 +2,7 @@
 #SBATCH -A naiss2025-22-1056 -p alvis
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
-#SBATCH --gpus-per-node=4
+#SBATCH --gres=gpu:T4:4
 #SBATCH --time=7-00:00:00
 #SBATCH --output=swift_exp_%j.out
 #SBATCH --error=swift_exp_%j.err
