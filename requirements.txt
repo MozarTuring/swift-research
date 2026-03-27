@@ -13,4 +13,5 @@
 # seaborn
 # omegaconf
 # hydra-core
-shortuuid
+# shortuuid
+human-eval
