@@ -9,6 +9,8 @@ module load Python/3.9.6-GCCcore-11.2.0
 # Activate SWIFT virtual environment
 source /mimer/NOBACKUP/groups/naiss2025-22-1056/python3_9_6_envs/swift-research/bin/activate
 
+which python
+
 # Print job info
 echo "=========================================="
 echo "SWIFT Experiment Started"
@@ -20,13 +22,6 @@ echo "=========================================="
 
 # Set visible GPUs
 export CUDA_VISIBLE_DEVICES=$SLURM_GPU_IDS
-
-# Check if remote.sh exists and source it
-if [ ! -f remote.sh ]; then
-    echo "ERROR: remote.sh not found. Copy remote.sh.example to remote.sh and edit it."
-    exit 1
-fi
-source remote.sh
 
 # Create logs directory if it doesn't exist
 mkdir -p $SWIFT_LOGS
