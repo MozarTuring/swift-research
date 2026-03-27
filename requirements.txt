@@ -1,0 +1,15 @@
+# SWIFT Research Dependencies
+fastchat
+torch
+transformers
+accelerate
+peft
+datasets
+evaluate
+scikit-learn
+numpy
+pandas
+matplotlib
+seaborn
+omegaconf
+hydra-core
