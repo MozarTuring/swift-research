@@ -16,6 +16,12 @@ from pathlib import Path
 
 import torch
 
+# Add SWIFT directory to Python path for imports
+SCRIPT_DIR = Path(__file__).parent.resolve()
+SWIFT_DIR = SCRIPT_DIR / "SWIFT"
+if str(SWIFT_DIR) not in sys.path:
+    sys.path.insert(0, str(SWIFT_DIR))
+
 
 def parse_args():
     parser = argparse.ArgumentParser(description="SWIFT Baseline Experiment Runner")
