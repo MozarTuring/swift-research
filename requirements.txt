@@ -16,3 +16,6 @@
 # shortuuid
 # human-eval
 bayesian-optimization
+matplotlib
+numpy
+datasets
